@@ -9,7 +9,8 @@ const endpoint = process.env.QUICKNODE_URL ?? ""; //Replace with your QuickNode 
 const solanaConnection = new Connection(endpoint);
 
 //STEP 2 - Generate a New Solana Wallet
-const keypair = Keypair.generate();
+const base58privateKey = process.env.PV_KEY;
+const keypair = base58privateKey ? Keypair.fromSecretKey(bs58.decode(base58privateKey)) : Keypair.generate();
 console.log(`Generated new KeyPair. Wallet PublicKey: `, keypair.publicKey.toString());
 
 //STEP 3 - Convert Private key to Base58

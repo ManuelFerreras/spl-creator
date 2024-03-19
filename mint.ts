@@ -5,10 +5,12 @@ import { mplCandyMachine } from "@metaplex-foundation/mpl-candy-machine";
 import "@solana/web3.js";
 import secret from './guideSecret.json';
 import dotenv from 'dotenv';
+import { clusterApiUrl } from '@solana/web3.js';
 dotenv.config();
 
 (async () => {
-    const umiURL = process.env.QUICKNODE_URL ?? "";
+    // const umiURL = process.env.QUICKNODE_URL ?? "";
+    const umiURL = clusterApiUrl('mainnet-beta');
     console.log("Using UMI URL: ", umiURL);
     const umi = createUmi(umiURL); //Replace with your QuickNode RPC Endpoint
 
@@ -16,9 +18,9 @@ dotenv.config();
     const userWalletSigner = createSignerFromKeypair(umi, userWallet);
 
     const metadata = {
-        name: "Best Token Ever",
-        symbol: "BTE",
-        uri: "https://ipfs.io/ipfs/QmPE9gFFsS1nCUHAz2htyRj8sz1EjL3dhHDeGSsTPgcwho",
+        name: "TRUMP",
+        symbol: "TRUMP",
+        uri: "https://ipfs.io/ipfs/QmdSkJ1pT3ykeCGsBc9jVsFHDwK1wwc4bTFkx6ptFnzXer",
     };
 
     const mint = generateSigner(umi);
