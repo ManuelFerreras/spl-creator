@@ -86,7 +86,7 @@ async function getTokenBalance(connection: Connection, token: PublicKey) {
   return tokenAccount.value.amount
 }
 
-async function howToUse() {
+async function removeFullLiquidity() {
   const lpToken = DEFAULT_TOKEN[LP_TOKEN] // LP
   const lpBalance = await getTokenBalance(connection, lpToken.mint)
   console.log('lpBalance', lpBalance)
@@ -105,4 +105,4 @@ async function howToUse() {
   })
 }
 
-howToUse()
+removeFullLiquidity()

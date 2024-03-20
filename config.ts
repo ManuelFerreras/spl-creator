@@ -35,9 +35,13 @@ export const addLookupTableInfo = LOOKUP_TABLE_CACHE // only mainnet. other = un
 
 export const DEFAULT_TOKEN = {
   'TRUMP': new Token(TOKEN_PROGRAM_ID, new PublicKey('GpbfGcR5nfsbXkxNAFopCLSSXnrVZskEFEp1nEv8pLQB'), 8, 'TRUMP', 'TRUMP'),
+  'TRUMP_V2': new Token(TOKEN_PROGRAM_ID, new PublicKey('9y3a8Da6fu39ELQfRhYKPDNTSvRF6Qwbn4jhcscdnHMx'), 8, 'TRUMP', 'TRUMP'),
+  'TRUMP_V3': new Token(TOKEN_PROGRAM_ID, new PublicKey('3RyzrwvCFyFeo1MiZFzLQM8puyqN74WKrdWGGEJeLG3E'), 8, 'TRUMP', 'TRUMP'),
+  'TRUMP_V4': new Token(TOKEN_PROGRAM_ID, new PublicKey('ACWJD6rt4bQakKsyVaG1mxEJxsxc622H8P2MT5HcvZgc'), 8, 'TRUMP', 'TRUMP'),
+  'TRUMP_V5': new Token(TOKEN_PROGRAM_ID, new PublicKey('3vZEFfEnZP13iHaTGUX3E92y9714yFYsn92YHGduqYwt'), 8, 'TRUMP', 'TRUMP'),
 }
 
 export const RETRIES = 50;
 
-export const TARGET_POOL = "8ou3VgVy1RBeE8uMMjyp6iw3NfSSimA3mcm2Hwg4zPGh"; // PAIR POOL ID
-export const LP_TOKEN = "TRUMP"; // PROP IN THE TOKEN ARRAY. SHOULD BE THE LP ID
+export const TARGET_POOL = "3UdSS1a28vFaPpu9NHYZab7KVwJxhhuzBDoK5atEit9g"; // PAIR POOL ID
+export const LP_TOKEN = "TRUMP_V5"; // PROP IN THE TOKEN ARRAY. SHOULD BE THE LP ID

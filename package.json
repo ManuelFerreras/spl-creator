@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "revoke-mint-authority": "spl-token authorize G5vMbX7HuZQiyagb37BAUcwv3STDYJjPrtEGLkH5uqNn mint --disable",
-    "revoke-freeze-authority": "spl-token authorize G5vMbX7HuZQiyagb37BAUcwv3STDYJjPrtEGLkH5uqNn freeze --disable",
+    "revoke-mint-authority": "spl-token authorize 93nu6GPv33zR5YeGMetytK4wu7bGLSb7F3u2AQARJBWa mint --disable",
+    "revoke-freeze-authority": "spl-token authorize 93nu6GPv33zR5YeGMetytK4wu7bGLSb7F3u2AQARJBWa freeze --disable",
     "set-devnet": "solana config set --url https://api.devnet.solana.com",
     "set-mainnet": "solana config set --url https://api.mainnet-beta.solana.com",
     "airdrop": "solana airdrop 1"
