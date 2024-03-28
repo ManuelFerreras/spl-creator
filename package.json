@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "revoke-mint-authority": "spl-token authorize 93nu6GPv33zR5YeGMetytK4wu7bGLSb7F3u2AQARJBWa mint --disable",
-    "revoke-freeze-authority": "spl-token authorize 93nu6GPv33zR5YeGMetytK4wu7bGLSb7F3u2AQARJBWa freeze --disable",
+    "mint": "spl-token authorize CfzGcDbaJx6d1tttiv2rV8i9HFbAcq3LuNfpMqWDyphi mint --disable",
+    "freeze": "spl-token authorize CfzGcDbaJx6d1tttiv2rV8i9HFbAcq3LuNfpMqWDyphi freeze --disable",
     "set-devnet": "solana config set --url https://api.devnet.solana.com",
     "set-mainnet": "solana config set --url https://api.mainnet-beta.solana.com",
     "airdrop": "solana airdrop 1"
@@ -21,7 +21,7 @@
     "@metaplex-foundation/umi-bundle-defaults": "^0.8.10",
     "@project-serum/serum": "^0.13.65",
     "@raydium-io/raydium-sdk": "^1.3.1-beta.47",
-    "@solana/spl-token": "^0.4.1",
+    "@solana/spl-token": "^0.4.3",
     "@solana/spl-token-metadata": "^0.1.2",
     "@solana/web3.js": "^1.87.6",
     "bn.js": "^5.2.1",

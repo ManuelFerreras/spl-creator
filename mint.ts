@@ -17,7 +17,7 @@ type MetadataType = {
 const mintFallback = async (umi: Umi, mint: KeypairSigner, metadata: MetadataType, owner: PublicKey) => {
     createAndMint(umi, {
         mint,
-        authority: umi.identity,
+        authority: undefined,
         name: metadata.name,
         symbol: metadata.symbol,
         uri: metadata.uri,
@@ -46,9 +46,9 @@ const mintFallback = async (umi: Umi, mint: KeypairSigner, metadata: MetadataTyp
     const userWalletSigner = createSignerFromKeypair(umi, userWallet);
 
     const metadata = {
-        name: "MILEI",
-        symbol: "MILEI",
-        uri: "https://ipfs.io/ipfs/Qmcdn4tJ7rPPkFZ46RCbiCyrtn3d3eea9oRUAH2pwuDRGL",
+        name: "Solana CAT",
+        symbol: "SCAT",
+        uri: "https://ipfs.io/ipfs/QmWemtDp8HkvFLB5APsGwXiwaMH3C4sPCuuJccaP97454c",
     };
 
     const mint = generateSigner(umi);
